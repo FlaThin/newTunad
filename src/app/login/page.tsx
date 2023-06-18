@@ -2,6 +2,8 @@ import Image from "next/image";
 import { Form } from "../Components/Form";
 import { Input } from "../Components/Form/Input";
 import Side from "../../../public/side3.png";
+import { Button } from "../Components/Button";
+import { SwitchToggle } from "../Components/Form/SwitchToggle";
 
 
 export default function Login() {
@@ -23,11 +25,22 @@ export default function Login() {
           <Input
             placeholder="Email ou username "
             label="Email"
+            type="email"
           />
           <Input
             placeholder="Digite sua senha"
             label="Senha"
+            type="password"
           />
+          <div className="flex justify-between items-center">  
+            <SwitchToggle></SwitchToggle>
+            <a href="#" className="text-blue-600 p-1 outline-2 outline-blue-400 text-xs">
+              Esqueceu a senha?
+            </a>
+          </div>
+          <Button className="bg-blue-600 text-white">
+            Logar
+          </Button>
         </div>
       </Form>
     </section>

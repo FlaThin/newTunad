@@ -20,7 +20,7 @@ export const InputContainer = styled.label`
   border-style: solid;
   border-color: transparent;
   &:focus-within {
-    border-color: black
+    border-color: #60A5FA;
   }
 
   svg { 
